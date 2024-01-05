@@ -1,0 +1,85 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+/****** .button, class général pour les boutons ******/
+.button {
+  color: $fourth900_color;
+  background-color: $secondary_color;
+  @include text_font;
+  font-size: 1.1em;
+  font-weight: 600;
+  border: 2px solid $fourth_color;
+  border-radius: 30px;
+  padding: 8px 20px;
+  transition: all 350ms ease-in-out;
+  cursor: pointer;
+  @include box_shadow;
+
+  &:hover {
+    border: 2px solid $secondary_color;
+    color: $secondary_color;
+    background-color: $fourth500_color;
+  }
+}
+
+/****** bouton pour le mode édition ******/
+.btn__modifier {
+  width: 155px;
+  @include text_font;
+  color: $secondary_color;
+  font-size: 1.2em;
+  cursor: pointer;
+  padding: 10px 5px;
+  transition: all 250ms ease-in-out;
+
+  p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &:hover {
+    color: $fourth_color;
+  }
+}
+
+/****** style du container et des 4 boutons pour la partie 
+filtrages des projets par catégories ******/
+.btn__filters {
+  box-shadow: 0 4px 4px rgba($third900_color, 32%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background-color: $fourth500_color;
+  gap: 20px;
+
+
+  button {
+    @include text_font;
+    background-color: $third_color;
+    padding: 7px 15px;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 4px rgba($third900_color, 36%);
+    transition: all 250ms ease-in-out;
+    opacity: 0.94;
+
+    &:focus {
+      background-color: $third900_color;
+      color: $third_color;
+      box-shadow: 2px 5px 5px rgba($third900_color, 40%);
+      opacity: 1;
+    }
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+.btn__filter__remove {
+  opacity: 0;
+  height: 0;
+}

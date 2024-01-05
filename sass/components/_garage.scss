@@ -1,0 +1,57 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.title {
+  @include box_shadow;
+  margin-top: 50px;
+  width: 100%;
+  background-color: $third900_color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  h2 {
+    @include text_font;
+    text-align: center;
+    padding: 30px;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: $secondary_color;
+  }
+}
+
+.projets {
+  min-height: 740px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+
+  .figure__style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    object-fit: cover;
+    height: 30%;
+    width: 25%;
+    gap: 18px;
+    margin: 25px 0;
+
+    img {
+      @include box_shadow;
+      height: 100%;
+      width: 90%;
+      border-radius: 50px;
+      object-fit: cover;
+    }
+
+    .gallery__name {
+      color: $secondary_color;
+      @include text_font;
+      font-weight: 700;
+      font-size: 1.2em;
+    }
+  }
+}

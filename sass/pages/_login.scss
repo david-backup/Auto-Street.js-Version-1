@@ -1,0 +1,77 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+main {
+  height: 70vh;
+  
+  .form__login h2 {
+    text-align: center;
+    margin: 150px auto 20px; 
+    font-weight: 700;
+    color: $secondary_color;
+    font-size: 2.8em;
+    letter-spacing: 2px;
+  }
+  .form__login p {
+    color: $error_color;
+    @include text_font;
+    font-weight: 500;
+    font-size: 1em;
+    text-align: center;
+  }
+  .form__login form {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    
+    .email,
+    .password {
+      @include box_shadow;
+      @include text_font;
+      max-width: 100%;
+      width: 450px;
+      height: 50px;
+      margin: auto ;
+      border: 2px solid $fourth_color;
+      border-radius: 15px;
+      outline: none;
+      font-size: 1.5em;
+      font-weight: 600;
+      color: $third900_color; 
+    }
+    .inputErrorLogin {
+      border: 2px solid $error_color !important;
+    }
+    
+    .form__label {
+      @include text_font;
+      width: 453px;
+      margin: auto;
+      margin-top: 30px;
+      font-weight: 500;
+      color: $secondary_color;
+      
+    }
+    #submit {
+      max-width: 100%;
+      width: 185px;
+      margin: 35px auto 20px;
+    }
+    .form__link {
+      color: $fourth_color;
+      text-align: center;
+      font-weight: 500;
+      font-size: 1.1em;  
+    }
+  }
+}
+footer li {
+  text-align: right;
+  padding: 0 100px 100px 0;
+  
+  .footer__link {
+    color: $secondary_color;
+    font-weight: 600;
+    font-size: 1.2em; 
+  }
+}

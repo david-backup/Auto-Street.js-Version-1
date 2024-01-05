@@ -1,0 +1,158 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "auto.street@gmail.com",
+      "password": "auto",
+      "admin": true
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Mecanique"
+    },
+    {
+      "id": 2,
+      "name": "Carosserie"
+    },
+    {
+      "id": 3,
+      "name": "Montage pneus"
+    }
+  ],
+  "works": [
+    {
+      "id": 1,
+      "title": "Mecanique 1",
+      "imageUrl": "assets/img/moteur_1.jpg",
+      "categoryId": 1,
+      "userId": 1,
+      "category": {
+        "id": 1,
+        "name": "Mecanique"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Mecanique 2",
+      "imageUrl": "assets/img/moteur_2.jpg",
+      "categoryId": 1,
+      "userId": 1,
+      "category": {
+        "id": 1,
+        "name": "Mecanique"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Mecanique 3",
+      "imageUrl": "assets/img/moteur_3.jpg",
+      "categoryId": 1,
+      "userId": 1,
+      "category": {
+        "id": 1,
+        "name": "Mecanique"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Mecanique 4",
+      "imageUrl": "assets/img/moteur_4.jpg",
+      "categoryId": 1,
+      "userId": 1,
+      "category": {
+        "id": 1,
+        "name": "Mecanique"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Carosserie 1",
+      "imageUrl": "assets/img/carosserie_1.jpg",
+      "categoryId": 2,
+      "userId": 1,
+      "category": {
+        "id": 2,
+        "name": "Carosserie"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Carosserie 2",
+      "imageUrl": "assets/img/carosserie_2.jpg",
+      "categoryId": 2,
+      "userId": 1,
+      "category": {
+        "id": 2,
+        "name": "Carosserie"
+      }
+    },
+    {
+      "id": 7,
+      "title": "Carosserie 3",
+      "imageUrl": "assets/img/carosserie_3.jpg",
+      "categoryId": 2,
+      "userId": 1,
+      "category": {
+        "id": 2,
+        "name": "Carosserie"
+      }
+    },
+    {
+      "id": 8,
+      "title": "Carosserie 4",
+      "imageUrl": "assets/img/carosserie_4.jpg",
+      "categoryId": 2,
+      "userId": 1,
+      "category": {
+        "id": 2,
+        "name": "Carosserie"
+      }
+    },
+    {
+      "id": 9,
+      "title": "Montage pneus 1",
+      "imageUrl": "assets/img/pneus_1.jpg",
+      "categoryId": 3,
+      "userId": 1,
+      "category": {
+        "id": 3,
+        "name": "Montage pneus"
+      }
+    },
+    {
+      "id": 10,
+      "title": "Montage pneus 2",
+      "imageUrl": "assets/img/pneus_2.jpg",
+      "categoryId": 3,
+      "userId": 1,
+      "category": {
+        "id": 3,
+        "name": "Montage pneus"
+      }
+    },
+    {
+      "id": 11,
+      "title": "Montage pneus 3",
+      "imageUrl": "assets/img/pneus_3.jpg",
+      "categoryId": 3,
+      "userId": 1,
+      "category": {
+        "id": 3,
+        "name": "Montage pneus"
+      }
+    },
+    {
+      "id": 12,
+      "title": "Montage pneus 4",
+      "imageUrl": "assets/img/pneus_4.jpg",
+      "categoryId": 3,
+      "userId": 1,
+      "category": {
+        "id": 3,
+        "name": "Montage pneus"
+      }
+    }
+  ]
+}

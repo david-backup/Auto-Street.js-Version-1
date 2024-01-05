@@ -1,0 +1,9 @@
+//mixins fonts roboto 
+@mixin text_font {
+  font-family: 'Roboto', sans-serif;
+}
+
+//box shadow cadres
+@mixin box_shadow {
+  box-shadow: rgba($third_color, 25%) 0px 0.0625em 0.0625em, rgba($third_color, 25%) 0px 0.125em 0.5em, rgba($third_color, 10%) 0px 0px 0px 1px inset;
+}

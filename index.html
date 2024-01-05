@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accueil</title>
+  <link rel="icon" type="image/x-icon" href="./assets/img/icon.png" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+  <div class="modal__container">
+    <div class="modal__projets">
+      <span><i class="fa-solid fa-xmark"></i></span>
+      <h2>Galerie photo</h2>
+      <div class="modal__garage"></div>
+      <button class="button">Ajouter une photo</button>
+    </div>
+  </div>
+
+  <header id="header">
+    <div class="header__title">
+      <h1 id="logo">Garage Auto-Street</h1>
+      <a id="header__avis"
+        href="https://www.google.com/search?hl=fr-FR&amp;gl=fr&amp;q=AUTO-STREET,+5+Rue+de+Moraye,+26760+Beaumont-l%C3%A8s-Valence&amp;ludocid=17524552952016791104&amp;lsig=AB86z5UtpFnldOaCe7VJJ494I8jO#lrd=0x12b5530b638cdd8d:0xf333b80f907be640,1,,,,"
+        target="_blank" class="button">Voir les avis clients</a>
+    </div>
+    <div class="header__content">
+      <div class="header__menu">
+        <ul id="menu">
+          <li><a href="#">Contact</a></li>
+          <li><a href="/login.html" class="logout">Login</a></li>
+          <li><a href="#" class="admin">Users</a></li>
+        </ul>
+        <span><i class="fa-solid fa-phone-volume"></i> 04.75.60.76.27</span>
+      </div>
+    </div>
+    <div id="banner">
+      <img class="banner__img" src="./assets/img/banner1.jpg" alt="Banner Auto Street" />
+      <p>Garage Auto Street <span>Contactez-nous: 04.75.60.76.27</span></p>
+
+      <img src="./assets/img/arrow_left.png" alt="fléche de navigation du slide gauche" class="arrow arrow_left" />
+      <img src="./assets/img/arrow_right.png" alt="fléche de navigation du slide droite" class="arrow arrow_right" />
+      <div class="dots"></div>
+    </div>
+  </header>
+
+  <div class="title">
+    <h2>Nos plus belles réalisations</h2>
+  </div>
+  <div class="btn__filters">
+    <button id="0">Tous les projets</button>
+  </div>
+  <section class="projets"></section>
+
+  <script src="./js/banner.js"></script>
+  <script src="./js/login.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

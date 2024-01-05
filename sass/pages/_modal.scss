@@ -1,0 +1,60 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.modal__container {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(128, 128, 128, 0.50);
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  margin-top: -59px;
+
+  .modal__projets {
+    box-shadow: 0 4px 4px rgba($third900_color, 50%);
+    height: 680px;
+    width: 620px;
+    background-color: $secondary_color;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    padding: 30px;
+    margin-top: -250px;
+
+    .fa-xmark {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      cursor: pointer;
+      font-size: 2em;
+    }
+    h2 {
+      position: absolute;
+      top: 30px;
+      font-size: 2em;
+      color: $third900_color;
+      font-weight: 600;
+    }
+    .button {
+      margin-bottom: 5px;
+      width: 250px;
+      font-size: 1.2em;
+
+      &:before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 480px;
+        background-color: rgba(128, 128, 128, 0.50);
+        bottom: 110px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
