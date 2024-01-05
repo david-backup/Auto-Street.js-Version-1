@@ -1,6 +1,6 @@
 /********** liste des variables du projet **********/
 const gallery = document.querySelector(".gallery");
-const btnFilter = document.querySelector(".btnFilters");
+const btnFilter = document.querySelector(".btn__filters");
 
 /********** récupération du tableau des projets "works" **********/
 async function getWorks() {
@@ -48,7 +48,17 @@ async function getCategories() {
 }
 
 /********** création et affichage des boutons de filtrage sur le dom *********/
-
+async function displayButtons() {
+  const arrayCategories = await getCategories();
+  console.log(arrayCategories);
+  arrayCategories.forEach((button) => {
+    const btn = document.createElement("button");
+    btnFilter.appendChild(btn);
+    btn.id = button.id;
+    btn.textContent = button.name;
+  });
+}
+displayButtons();
 /********** filtrage des boutons par catégorie *********/
 
 /********** !!! dernière partie de la logique de connection
