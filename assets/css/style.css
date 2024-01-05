@@ -477,14 +477,14 @@ footer li .footer__link {
   color: #FFFFFF;
 }
 
-.projets {
+.projects {
   min-height: 740px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: 20px 0;
 }
-.projets .figure__style {
+.projects .figure__style {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -495,14 +495,14 @@ footer li .footer__link {
   gap: 18px;
   margin: 25px 0;
 }
-.projets .figure__style img {
+.projects .figure__style img {
   box-shadow: rgba(234, 234, 234, 0.25) 0px 0.0625em 0.0625em, rgba(234, 234, 234, 0.25) 0px 0.125em 0.5em, rgba(234, 234, 234, 0.1) 0px 0px 0px 1px inset;
   height: 100%;
   width: 90%;
   border-radius: 50px;
   object-fit: cover;
 }
-.projets .figure__style .gallery__name {
+.projects .figure__style .gallery__name {
   color: #FFFFFF;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
