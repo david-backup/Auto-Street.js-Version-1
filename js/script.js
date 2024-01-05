@@ -50,16 +50,37 @@ async function getCategories() {
 /********** création et affichage des boutons de filtrage sur le dom *********/
 async function displayButtons() {
   const arrayCategories = await getCategories();
-  console.log(arrayCategories);
-  arrayCategories.forEach((button) => {
+  arrayCategories.forEach((category) => {
     const btn = document.createElement("button");
     btnFilter.appendChild(btn);
-    btn.id = button.id;
-    btn.textContent = button.name;
+    btn.id = category.id;
+    btn.textContent = category.name;
   });
 }
 displayButtons();
+
 /********** filtrage des boutons par catégorie *********/
+async function filterWorks() {
+  const arrayWorks = await getWorks();
+  const buttons = document.querySelectorAll(".btn__filters button");
+  buttons.forEach((button) => {
+    button.addEventListener("click", (e) => {
+      const buttonId = e.target.id;
+      gallery.innerHTML = "";
+      if (buttonId !== "0") {
+        const arrayNew = arrayWorks.filter((work) => {
+          return work.categoryId == buttonId;
+        });
+        arrayNew.forEach((work) => {
+          createWork(work);
+        });
+      } else {
+        displayWorks();
+      }
+    });
+  });
+}
+filterWorks();
 
 /********** !!! dernière partie de la logique de connection
   une fois que l'utilisateur est connecté !!! **********/
