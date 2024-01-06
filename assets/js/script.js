@@ -89,11 +89,37 @@ const logout = document.querySelector(".logout");
 const admin = document.querySelector(".admin");
 
 /********** fonction d'ajout de la partie edition dans le header **********/
+function displayBannerEdition() {
+  const header = document.getElementById("header");
+  const headerTitle = document.querySelector(".header__title");
+  const bannerEdition = document.createElement("div");
+  const infoEdition = document.createElement("p");
+  bannerEdition.classList.add("edition__mode");
+  infoEdition.innerHTML = `<i class="fa-regular fa-pen-to-square"></i> Mode édition`;
+  header.appendChild(bannerEdition);
+  bannerEdition.appendChild(infoEdition);
+  headerTitle.classList.add("header__margin");
+}
 
 /********** fonction d'ajout du bouton d'edition **********/
+function displayBtnEdition() {
+  const btnFilters = document.querySelector(".btn__filters");
+  const galleryTitle = document.querySelector(".title");
+  const btnModifier = document.createElement("div");
+  btnModifier.classList.add("btn__modifier");
+  galleryTitle.appendChild(btnModifier);
+  const infoEdition = document.createElement("p");
+  infoEdition.innerHTML = `<i class="fa-regular fa-pen-to-square"></i> Mode édition`;
+  btnModifier.appendChild(infoEdition);
+  btnFilters.classList.add("btn__filter__remove");
+}
+
+/********** récupération du sessionStorage.loged et logique suite login **********/
 if (loged === "true") {
   logout.textContent = "Logout";
   admin.textContent = "Admin";
+  displayBannerEdition();
+  displayBtnEdition();
   logout.addEventListener("click", () => {
     window.sessionStorage.loged = false;
   });
