@@ -150,7 +150,7 @@ main .form__login h2 {
   font-size: 2.8em;
   letter-spacing: 2px;
 }
-main .form__login p {
+main #message__error {
   color: #ff0000;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
