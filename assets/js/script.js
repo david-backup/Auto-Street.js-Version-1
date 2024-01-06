@@ -114,12 +114,13 @@ function displayBtnEdition() {
   btnFilters.classList.add("btn__filter__remove");
 }
 
-/********** récupération du sessionStorage.loged et logique suite login **********/
+/********** bouton logout et logique de déconnection ***********/
 if (loged === "true") {
   logout.textContent = "Logout";
   admin.textContent = "Admin";
   displayBannerEdition();
   displayBtnEdition();
+
   logout.addEventListener("click", () => {
     window.sessionStorage.loged = false;
   });
@@ -134,10 +135,25 @@ logout.addEventListener("click", () => {
   }
 });
 
-/********** bouton logout et logique de déconnection ***********/
-
-/********** condition de redirection html login/logout**********/
 /**********création du contenue de la modal **********/
+async function createModal() {
+  const arrayWorks = await getWorks();
+  console.log(arrayWorks);
+  const btnModifier = document.querySelector(".btn__modifier");
+  const displayModal = document.querySelector(".modal__container");
+  const modalGarage = document.querySelector(".modal__garage");
+  btnModifier.addEventListener("click", () => {
+    displayModal.style.display = "flex";
+  });
+  arrayWorks.forEach((work) => {
+    const figure = document.createElement("figure");
+    const img = document.createElement("img");
+    img.src = work.imageUrl;
+    modalGarage.appendChild(figure);
+    figure.appendChild(img);
+  });
+}
+createModal();
 
 /********** ouverture et fermeture de la modal au click *********/
 /********** suppréssion de projets dans la modal **********/

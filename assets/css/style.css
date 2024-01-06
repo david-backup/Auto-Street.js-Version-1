@@ -233,7 +233,6 @@ footer li .footer__link {
   flex-direction: column;
   position: relative;
   padding: 30px;
-  margin-top: -250px;
 }
 .modal__container .modal__projets .fa-xmark {
   position: absolute;
