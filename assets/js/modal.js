@@ -23,4 +23,17 @@ async function createModal() {
 createModal();
 
 /********** ouverture et fermeture de la modal au click *********/
+function closeModal() {
+  const btnClose = document.querySelector(".fa-xmark");
+  const modalContainer = document.querySelector(".modal__container");
+  btnClose.addEventListener("click", () => {
+    modalContainer.style.display = "none";
+  });
+  modalContainer.addEventListener("click", (e) => {
+    if (e.target === modalContainer) {
+      modalContainer.style.display = "none";
+    }
+  });
+}
+closeModal();
 /********** suppréssion de projets dans la modal **********/
