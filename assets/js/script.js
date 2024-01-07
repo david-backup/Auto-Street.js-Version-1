@@ -120,7 +120,6 @@ if (loged === "true") {
   admin.textContent = "Admin";
   displayBannerEdition();
   displayBtnEdition();
-
   logout.addEventListener("click", () => {
     window.sessionStorage.loged = false;
   });
@@ -134,26 +133,3 @@ logout.addEventListener("click", () => {
     window.location.href = "./login.html";
   }
 });
-
-/**********création du contenue de la modal **********/
-async function createModal() {
-  const arrayWorks = await getWorks();
-  console.log(arrayWorks);
-  const btnModifier = document.querySelector(".btn__modifier");
-  const displayModal = document.querySelector(".modal__container");
-  const modalGarage = document.querySelector(".modal__garage");
-  btnModifier.addEventListener("click", () => {
-    displayModal.style.display = "flex";
-  });
-  arrayWorks.forEach((work) => {
-    const figure = document.createElement("figure");
-    const img = document.createElement("img");
-    img.src = work.imageUrl;
-    modalGarage.appendChild(figure);
-    figure.appendChild(img);
-  });
-}
-createModal();
-
-/********** ouverture et fermeture de la modal au click *********/
-/********** suppréssion de projets dans la modal **********/

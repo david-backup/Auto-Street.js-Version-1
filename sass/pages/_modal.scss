@@ -13,7 +13,7 @@
   margin-top: -59px;
 
   .modal__projets {
-    box-shadow: 0 4px 4px rgba($third900_color, 50%);
+    box-shadow: 0 4px 4px rgba($primary_color, 60%);
     height: 680px;
     width: 620px;
     background-color: $secondary_color;
@@ -24,6 +24,22 @@
     flex-direction: column;
     position: relative;
     padding: 30px;
+
+    .fa-trash-can {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background-color: $secondary_color;
+      border: 1px solid $third900_color;
+      width: 20px;
+      height: 22px;
+      border-radius: 5px;
+      box-shadow: 0 4px 4px rgba($primary_color, 30%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
 
     .fa-xmark {
       position: absolute;

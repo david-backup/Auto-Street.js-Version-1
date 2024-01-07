@@ -222,7 +222,7 @@ footer li .footer__link {
   margin-top: -59px;
 }
 .modal__container .modal__projets {
-  box-shadow: 0 4px 4px rgba(53, 53, 53, 0.5);
+  box-shadow: 0 4px 4px rgba(16, 16, 16, 0.6);
   height: 680px;
   width: 620px;
   background-color: #FFFFFF;
@@ -233,6 +233,21 @@ footer li .footer__link {
   flex-direction: column;
   position: relative;
   padding: 30px;
+}
+.modal__container .modal__projets .fa-trash-can {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: #FFFFFF;
+  border: 1px solid #353535;
+  width: 20px;
+  height: 22px;
+  border-radius: 5px;
+  box-shadow: 0 4px 4px rgba(16, 16, 16, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 .modal__container .modal__projets .fa-xmark {
   position: absolute;
