@@ -2,14 +2,28 @@
 const modalContainer = document.querySelector(".modal__container");
 const trash = document.querySelector(".fa-xmark");
 
+/********** ouverture et fermeture de la modal au click *********/
+const btnModifier = document.querySelector(".btn__modifier");
+btnModifier.addEventListener("click", () => {
+  modalContainer.style.display = "flex";
+});
+function closeModal() {
+  trash.addEventListener("click", () => {
+    modalContainer.style.display = "none";
+  });
+  modalContainer.addEventListener("click", (e) => {
+    if (e.target === modalContainer) {
+      modalContainer.style.display = "none";
+    }
+  });
+}
+closeModal();
+
 /**********création du contenue de la modal **********/
 async function createModal() {
-  const arrayWorks = await getWorks();
   const modalGarage = document.querySelector(".modal__garage");
-  const btnModifier = document.querySelector(".btn__modifier");
-  btnModifier.addEventListener("click", () => {
-    modalContainer.style.display = "flex";
-  });
+  modalGarage.innerHTML = "";
+  const arrayWorks = await getWorks();
   arrayWorks.forEach((work) => {
     const figure = document.createElement("figure");
     const img = document.createElement("img");
@@ -28,19 +42,6 @@ async function createModal() {
 }
 createModal();
 
-/********** ouverture et fermeture de la modal au click *********/
-function closeModal() {
-  trash.addEventListener("click", () => {
-    modalContainer.style.display = "none";
-  });
-  modalContainer.addEventListener("click", (e) => {
-    if (e.target === modalContainer) {
-      modalContainer.style.display = "none";
-    }
-  });
-}
-closeModal();
-
 /********** suppréssion de projets dans la modal **********/
 function deleteProject() {
   const trashIcons = document.querySelectorAll(".fa-trash-can");
@@ -55,8 +56,6 @@ function deleteProject() {
       if (response.ok) {
         deleteMessage.textContent = "Votre projet été supprimé avec succès !";
         console.log("la suppression a réussi !");
-        const modalGarage = document.querySelector(".modal__garage");
-        modalGarage.innerHTML = "";
         createModal();
         displayWorks();
       } else {
