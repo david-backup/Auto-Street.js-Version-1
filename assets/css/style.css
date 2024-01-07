@@ -234,6 +234,13 @@ footer li .footer__link {
   position: relative;
   padding: 30px;
 }
+.modal__container .modal__projets .delete__message {
+  color: #353535;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  position: absolute;
+  top: 66px;
+}
 .modal__container .modal__projets .fa-trash-can {
   position: absolute;
   top: 8px;

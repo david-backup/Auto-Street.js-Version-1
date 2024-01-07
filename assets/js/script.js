@@ -30,6 +30,7 @@ function createWork(work) {
 
 /********** création et affichage des 12 projets sur le dom *********/
 async function displayWorks() {
+  gallery.innerHTML = "";
   const arrayWorks = await getWorks();
   arrayWorks.forEach((work) => {
     createWork(work);

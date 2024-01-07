@@ -11,15 +11,22 @@
 </head>
 
 <body>
+
+  <!-- première modal ---------->
   <div class="modal__container">
     <div class="modal__projets">
+      <div class="delete__message"></div>
       <span><i class="fa-solid fa-xmark"></i></span>
       <h2>Galerie photo</h2>
       <div class="modal__garage"></div>
       <button class="button">Ajouter une photo</button>
     </div>
+
+    <!-- deuxième modal ---------->
+
   </div>
 
+  <!-- header ---------->
   <header id="header">
     <div class="header__title">
       <h1 id="logo">Garage Auto-Street</h1>
@@ -37,24 +44,31 @@
         <span><i class="fa-solid fa-phone-volume"></i> 04.75.60.76.27</span>
       </div>
     </div>
+
+    <!-- caroussel ----------->
     <div id="banner">
       <img class="banner__img" src="./assets/img/banner1.jpg" alt="Banner Auto Street" />
       <p>Garage Auto Street <span>Contactez-nous: 04.75.60.76.27</span></p>
-
       <img src="./assets/img/arrow_left.png" alt="fléche de navigation du slide gauche" class="arrow arrow_left" />
       <img src="./assets/img/arrow_right.png" alt="fléche de navigation du slide droite" class="arrow arrow_right" />
       <div class="dots"></div>
     </div>
   </header>
 
+  <!-- bannière titre de gallerie et btnModifier ---------->
   <div class="title">
     <h2>Nos plus belles réalisations</h2>
   </div>
+
+  <!-- boutons de filtrage par catégories ----------->
   <div class="btn__filters">
     <button id="0">Tous les projets</button>
   </div>
+
+  <!-- gallerie photos ---------->
   <section class="gallery"></section>
 
+  <!-- fichiers JS reliés ---------->
   <script src="./assets/js/banner.js"></script>
   <script src="./assets/js/script.js"></script>
   <script src="./assets/js/modal.js"></script>

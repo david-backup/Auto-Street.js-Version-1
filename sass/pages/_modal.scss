@@ -25,6 +25,14 @@
     position: relative;
     padding: 30px;
 
+    .delete__message {
+      color: $third900_color;
+      @include text_font;
+      font-weight: 400;
+      position: absolute;
+      top: 66px;
+    }
+
     .fa-trash-can {
       position: absolute;
       top: 8px;
