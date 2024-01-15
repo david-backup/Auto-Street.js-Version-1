@@ -286,6 +286,131 @@ footer li .footer__link {
   transform: translateX(-50%);
 }
 
+.modal__addProjets {
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 688px;
+  width: 630px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  position: relative;
+  padding: 30px;
+  border-radius: 15px;
+}
+.modal__addProjets .fa-arrow-left {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-size: 1.8em;
+  cursor: pointer;
+}
+.modal__addProjets .fa-xmark {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 1.8em;
+  cursor: pointer;
+}
+.modal__addProjets h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6em;
+  position: absolute;
+  top: 70px;
+}
+.modal__addProjets .error {
+  color: #ff0000;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.05em;
+  position: absolute;
+  top: 115px;
+  margin: auto;
+}
+.modal__addProjets form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+  width: 420px;
+  gap: 10px;
+}
+.modal__addProjets form .message__ok {
+  color: #101010;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.05em;
+  position: absolute;
+  top: 115px;
+  width: 420px;
+}
+.modal__addProjets form .modal__containerFile {
+  background-color: #e8f1f6;
+  height: 170px;
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  margin: 35px auto 20px;
+}
+.modal__addProjets form .modal__containerFile .fa-image {
+  color: #7E7E7E;
+  font-size: 4.7em;
+}
+.modal__addProjets form .modal__containerFile label {
+  background-color: #7E7E7E;
+  color: #239fb9;
+  font-size: 0.9em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 11px 32px;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+.modal__addProjets form .modal__containerFile label:hover {
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.modal__addProjets form .modal__containerFile input {
+  display: none;
+}
+.modal__addProjets form .modal__containerFile img {
+  display: none;
+  max-width: 100%;
+  height: 100%;
+  margin: auto;
+}
+.modal__addProjets form .modal__containerFile p {
+  color: #353535;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.65em;
+}
+.modal__addProjets form .modal__label {
+  font-size: 0.9em;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  color: #353535;
+}
+.modal__addProjets form #modal__title,
+.modal__addProjets form #modal__category {
+  height: 51px;
+  width: 420px;
+  border: none;
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  padding: 0;
+  outline: none;
+  margin: 2px auto 20px;
+  color: #353535;
+}
+
 .modal__garage {
   width: 500px;
   height: 450px;

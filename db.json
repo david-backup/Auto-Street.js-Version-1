@@ -24,7 +24,7 @@
   "works": [
     {
       "id": 1,
-      "title": "Mecanique 2",
+      "title": "Mecanique 1",
       "imageUrl": "assets/img/moteur_1.jpg",
       "categoryId": 1,
       "userId": 1,
@@ -154,5 +154,6 @@
         "name": "Montage pneus"
       }
     }
+    
   ]
 }
